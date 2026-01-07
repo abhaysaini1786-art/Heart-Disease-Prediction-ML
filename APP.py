@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 
-# --- Step 1: Model & Scaler Load Karein ---
+# --- Step 1: Model & Scaler Load ---
 try:
     model = joblib.load('heart_model.pkl')
     scaler = joblib.load('scaler.pkl')
@@ -76,5 +76,4 @@ if st.button("Predict Results"):
         st.success(f"✅ LOW RISK: No disease detected (Probability: {prob*100:.1f}%)")
         st.write("Patient seems healthy based on current parameters.")
 
-    # Visualization: Gauge Chart (Optional visual)
-    # st.progress(prob)
+   
