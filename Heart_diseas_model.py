@@ -1,6 +1,6 @@
 """
 Project Name: Heart Disease Prediction Analysis
-Author: [Aapka Naam]
+Author: [Abhay kumar]
 Model: Logistic Regression (Optimized with Custom Threshold)
 """
 
@@ -99,4 +99,5 @@ plt.barh(feat_importance['Feature'], feat_importance['Importance'], color='teal'
 plt.title('Feature Importance (Logistic Regression Coefficients)')
 plt.xlabel('Coefficient Value')
 plt.show()
+
 
